@@ -1,0 +1,68 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Summer game projects/ArtificialDataTypes/Camera.h
+Vector3.h
+D:/Summer game projects/ArtificialDataTypes/Vector3.h
+
+D:/Summer game projects/ArtificialDataTypes/Constants.h
+
+D:/Summer game projects/ArtificialDataTypes/Structs.h
+iostream
+-
+../Initializations/HelloGL.h
+D:/Summer game projects/Initializations/HelloGL.h
+
+D:/Summer game projects/ArtificialDataTypes/Vector3.h
+
+D:/Summer game projects/Draw2DShapes/Draw2D.h
+Windows.h
+-
+GL/glut.h
+-
+GL/freeglut.h
+D:/Summer game projects/Draw2DShapes/GL/freeglut.h
+gl/gl.h
+-
+gl/glu.h
+-
+iostream
+-
+
+D:/Summer game projects/Initializations/GLUTCallbacks.h
+
+D:/Summer game projects/Initializations/HelloGL.cpp
+HelloGL.h
+D:/Summer game projects/Initializations/HelloGL.h
+
+D:/Summer game projects/Initializations/HelloGL.h
+Windows.h
+-
+GL/glut.h
+-
+GL/freeglut.h
+D:/Summer game projects/Initializations/GL/freeglut.h
+gl/gl.h
+-
+gl/glut.h
+-
+gl/glu.h
+-
+GLUTCallbacks.h
+D:/Summer game projects/Initializations/GLUTCallbacks.h
+../Draw2DShapes/Draw2D.h
+D:/Summer game projects/Draw2DShapes/Draw2D.h
+../ArtificialDataTypes/Constants.h
+D:/Summer game projects/ArtificialDataTypes/Constants.h
+../ArtificialDataTypes/Structs.h
+D:/Summer game projects/ArtificialDataTypes/Structs.h
+../ArtificialDataTypes/Camera.h
+D:/Summer game projects/ArtificialDataTypes/Camera.h
+iostream
+-
+

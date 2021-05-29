@@ -1,0 +1,3 @@
+D:/Summer game projects/cmake-build-debug/CMakeFiles/Summer_game_projects.dir
+D:/Summer game projects/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Summer game projects/cmake-build-debug/CMakeFiles/rebuild_cache.dir
