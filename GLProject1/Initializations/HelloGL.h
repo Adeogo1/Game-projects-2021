@@ -17,13 +17,13 @@
 #include "../ArtificialDataTypes/Camera.h"
 #include <iostream>
 
-
 class HelloGL {
 private:
     Draw2D* shapes;
     Camera* camera;
     float m_rotation;
     float LR,UD,FD;
+    Rect2D square;
 public:
     HelloGL(int argc, char* argv[]);
     void Display();

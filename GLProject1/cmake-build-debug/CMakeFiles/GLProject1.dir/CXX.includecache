@@ -15,14 +15,14 @@ D:/Game projects 2021/GLProject1/ArtificialDataTypes/Constants.h
 D:/Game projects 2021/GLProject1/ArtificialDataTypes/Structs.h
 iostream
 -
+math.h
+-
+tuple
+-
 ../Initializations/HelloGL.h
 D:/Game projects 2021/GLProject1/Initializations/HelloGL.h
 
 D:/Game projects 2021/GLProject1/ArtificialDataTypes/Vector3.h
-
-D:/Game projects 2021/GLProject1/Draw2DShapes/Draw2D.cpp
-Draw2D.h
-D:/Game projects 2021/GLProject1/Draw2DShapes/Draw2D.h
 
 D:/Game projects 2021/GLProject1/Draw2DShapes/Draw2D.h
 Windows.h
@@ -37,14 +37,6 @@ gl/glu.h
 -
 iostream
 -
-
-D:/Game projects 2021/GLProject1/Initializations/GLUTCallbacks.cpp
-GLUTCallbacks.h
-D:/Game projects 2021/GLProject1/Initializations/GLUTCallbacks.h
-HelloGL.h
-D:/Game projects 2021/GLProject1/Initializations/HelloGL.h
-../ArtificialDataTypes/Constants.h
-D:/Game projects 2021/GLProject1/ArtificialDataTypes/Constants.h
 
 D:/Game projects 2021/GLProject1/Initializations/GLUTCallbacks.h
 
@@ -77,10 +69,4 @@ D:/Game projects 2021/GLProject1/ArtificialDataTypes/Structs.h
 D:/Game projects 2021/GLProject1/ArtificialDataTypes/Camera.h
 iostream
 -
-
-D:/Game projects 2021/GLProject1/Initializations/main.cpp
-iostream
--
-HelloGL.h
-D:/Game projects 2021/GLProject1/Initializations/HelloGL.h
 

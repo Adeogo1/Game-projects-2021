@@ -3,11 +3,13 @@
 //
 
 #include "HelloGL.h"
-
+int x1 = 3;
+int x2 = 3;
 HelloGL::HelloGL(int argc, char* argv[]) {
     GLUTCallbacks::Init(this);
     m_rotation = 0.0f;
     LR = UD = FD = 0.0f;
+    square = {-0.7f,-0.7f,1.5f,1};
     //camera
     camera = new Camera();
     camera->eye.X = 0;camera->eye.Y = 0;camera->eye.Z = 10.0f;
@@ -34,6 +36,7 @@ HelloGL::HelloGL(int argc, char* argv[]) {
     glViewport(0, 0, 800, 800);
     gluPerspective(45, 1, 0.1, 1000);//you can leave yours at 0 i changed mine to 0.1
     glMatrixMode(GL_MODELVIEW);
+
     glutMainLoop();
 }
 
@@ -45,18 +48,35 @@ HelloGL::~HelloGL() {
 void HelloGL::Display() {
     //glClearColor(1.0f,1.0f,0.0f,1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
+    //
     glPushMatrix();
-    glTranslatef(LR,UD,FD);
-    char test[] = "Idk how to go about doing this";
-    Vector3 v = {0,0,0};
-    Vector3 newv = {LR,UD,FD};
-    v = v+newv;
-    Color c = {1,1,0};
-    DrawString(test, &v, &c);
-    glRotatef(m_rotation, 1.0f,0.0f,-0.0f);
-   // glutSolidCube(0.5);
+    //renders 3D Content
+    // glMatrixMode(GL_PROJECTION);
+    //     glLoadIdentity();
+    //     glViewport(0, 0, 800, 800);
+    //     gluPerspective(45, 1, 0.1, 1000);//you can leave yours at 0 i changed mine to 0.1
+    //    glMatrixMode(GL_MODELVIEW);
+    //    glRotatef(m_rotation,1.0f,1.0f,0.0f);
+       glutWireCube(0.5f);
+
+
+
+    //renders 2D Content
+    // glMatrixMode(GL_PROJECTION);
+    //    glLoadIdentity();
+    //    glOrtho(1.0f, 1.0f, 1.0f, 1.0f, -1.0f, 1.0f);
+    //    glMatrixMode(GL_MODELVIEW);
+
+    glRotatef(m_rotation,1.0f,1.0f,0.0f);
     glBegin(GL_POLYGON);
+    glColor4f(0.8f,0.2f,0.5f,1.0f);
     //shapes->Hexagon();
+    #pragma region square
+    glVertex2f(square.x, square.y);
+    glVertex2f(square.x + (square.width), square.y);
+    glVertex2f(square.x + (square.width), square.y+ (square.height));
+    glVertex2f(square.x , square.y+ (square.height));
+    #pragma endregion
 
     glEnd();
     glPopMatrix();
@@ -71,10 +91,11 @@ void HelloGL::Update() {
     camera->center.X,camera->center.Y,camera->center.Z,
     camera->up.X,camera->up.Y,camera->up.Z);
     glutPostRedisplay();
-    /*m_rotation += 0.5;
+
+    //m_rotation += 0.5;
     if (m_rotation >= 360){
         m_rotation = 0.0f;
-    }*/
+    }
     //cout << "LR " << LR << endl << "UD " << UD << endl << "FD" << FD << endl;
 }
 
@@ -82,6 +103,7 @@ void HelloGL::Update() {
 void HelloGL::DrawString(const char *text, Vector3 *pos, Color *color) {
     glTranslatef(pos->X,pos->Y,pos->Z);
     glRasterPos2f(0.0f, 0.0f);
+
     glutBitmapString(GLUT_BITMAP_HELVETICA_18, (unsigned char*)text);
 }
 #pragma endregion
@@ -89,7 +111,7 @@ void HelloGL::DrawString(const char *text, Vector3 *pos, Color *color) {
 
 void HelloGL::Keyboard(unsigned char key, int x, int y) {
     if(key == 'd'){
-        LR += 0.5F;
+        m_rotation += 0.5F;
     }
     else if(key == 'a'){
         LR -= 0.5F;
@@ -130,6 +152,10 @@ void HelloGL::Motion(int x, int y) {
 
 void HelloGL::PassiveMotion(int x, int y) {
 
+    x1 =x;
+    x2 = y;
+    cout <<"x " << x1 <<endl;
+    cout << "y " << x2 << endl;
 }
 
 
