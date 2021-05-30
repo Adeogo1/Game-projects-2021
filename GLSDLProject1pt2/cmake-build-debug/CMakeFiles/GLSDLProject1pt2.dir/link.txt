@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\GLSDLProject1pt2.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\GLSDLProject1pt2.dir/objects.a @CMakeFiles\GLSDLProject1pt2.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\GLSDLProject1pt2.dir/objects.a -Wl,--no-whole-archive -o GLSDLProject1pt2.exe -Wl,--out-implib,libGLSDLProject1pt2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\GLSDLProject1pt2.dir\linklibs.rsp

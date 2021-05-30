@@ -38,6 +38,14 @@ gl/glu.h
 iostream
 -
 
+D:/Game projects 2021/GLProject1/Initializations/GLUTCallbacks.cpp
+GLUTCallbacks.h
+D:/Game projects 2021/GLProject1/Initializations/GLUTCallbacks.h
+HelloGL.h
+D:/Game projects 2021/GLProject1/Initializations/HelloGL.h
+../ArtificialDataTypes/Constants.h
+D:/Game projects 2021/GLProject1/ArtificialDataTypes/Constants.h
+
 D:/Game projects 2021/GLProject1/Initializations/GLUTCallbacks.h
 
 D:/Game projects 2021/GLProject1/Initializations/HelloGL.cpp
@@ -75,6 +83,12 @@ D:/Game projects 2021/GLProject1/imGui/imgui_impl_glut.h
 D:/Game projects 2021/GLProject1/imGui/imgui_impl_opengl2.h
 iostream
 -
+
+D:/Game projects 2021/GLProject1/Initializations/main.cpp
+iostream
+-
+HelloGL.h
+D:/Game projects 2021/GLProject1/Initializations/HelloGL.h
 
 D:/Game projects 2021/GLProject1/imGui/imconfig.h
 

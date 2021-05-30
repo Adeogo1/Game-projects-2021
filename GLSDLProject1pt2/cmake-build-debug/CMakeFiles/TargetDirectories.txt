@@ -1,0 +1,3 @@
+D:/Game projects 2021/GLSDLProject1pt2/cmake-build-debug/CMakeFiles/GLSDLProject1pt2.dir
+D:/Game projects 2021/GLSDLProject1pt2/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Game projects 2021/GLSDLProject1pt2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
