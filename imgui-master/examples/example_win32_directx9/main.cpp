@@ -20,7 +20,7 @@ void ResetDevice();
 LRESULT WINAPI WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
 // Main code
-int main(int, char**)
+int main5(int, char**)
 {
     // Create application window
     //ImGui_ImplWin32_EnableDpiAwareness();

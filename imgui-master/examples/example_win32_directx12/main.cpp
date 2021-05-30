@@ -58,7 +58,7 @@ void ResizeSwapChain(HWND hWnd, int width, int height);
 LRESULT WINAPI WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
 // Main code
-int main(int, char**)
+int main4(int, char**)
 {
     // Create application window
     //ImGui_ImplWin32_EnableDpiAwareness();
