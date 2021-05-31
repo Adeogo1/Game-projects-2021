@@ -6,7 +6,7 @@
 using namespace std;
 
 
-int main(int argc, char** args[]) {
+int main(int argc, char* args[]) {
      char Title[] = "Adeeeehhhhhh";
     Engine::GetInstance()->Init(Title);
     while (Engine::GetInstance()->IsRunning()){

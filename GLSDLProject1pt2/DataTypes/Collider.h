@@ -1,0 +1,14 @@
+//
+// Created by a016817k on 31/05/2021.
+//
+
+#ifndef GLSDLPROJECT1PT2_COLLIDER_H
+#define GLSDLPROJECT1PT2_COLLIDER_H
+
+
+class Collider {
+
+};
+
+
+#endif //GLSDLPROJECT1PT2_COLLIDER_H

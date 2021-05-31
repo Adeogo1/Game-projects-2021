@@ -1,1 +1,1 @@
-  -LC:/libs/SDL/lib/x86  -lSDL2main -lSDL2 -lSDL2test -lOpenGL32 -lfreeGLUT -lglu32 -lglew32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+  -LC:/libs/SDL/lib/x86  -lSDL2_image -lSDL2main -lSDL2 -lOpenGL32 -lfreeGLUT -lglu32 -lglew32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

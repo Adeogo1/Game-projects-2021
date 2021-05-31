@@ -117,11 +117,101 @@ CMakeFiles/GLSDLProject1pt2.dir/Engine/Timer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GLSDLProject1pt2.dir/Engine/Timer.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Game projects 2021\GLSDLProject1pt2\Engine\Timer.cpp" -o CMakeFiles\GLSDLProject1pt2.dir\Engine\Timer.cpp.s
 
+CMakeFiles/GLSDLProject1pt2.dir/InputManager/InputManager.cpp.obj: CMakeFiles/GLSDLProject1pt2.dir/flags.make
+CMakeFiles/GLSDLProject1pt2.dir/InputManager/InputManager.cpp.obj: CMakeFiles/GLSDLProject1pt2.dir/includes_CXX.rsp
+CMakeFiles/GLSDLProject1pt2.dir/InputManager/InputManager.cpp.obj: ../InputManager/InputManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Game projects 2021\GLSDLProject1pt2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GLSDLProject1pt2.dir/InputManager/InputManager.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GLSDLProject1pt2.dir\InputManager\InputManager.cpp.obj -c "D:\Game projects 2021\GLSDLProject1pt2\InputManager\InputManager.cpp"
+
+CMakeFiles/GLSDLProject1pt2.dir/InputManager/InputManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GLSDLProject1pt2.dir/InputManager/InputManager.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Game projects 2021\GLSDLProject1pt2\InputManager\InputManager.cpp" > CMakeFiles\GLSDLProject1pt2.dir\InputManager\InputManager.cpp.i
+
+CMakeFiles/GLSDLProject1pt2.dir/InputManager/InputManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GLSDLProject1pt2.dir/InputManager/InputManager.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Game projects 2021\GLSDLProject1pt2\InputManager\InputManager.cpp" -o CMakeFiles\GLSDLProject1pt2.dir\InputManager\InputManager.cpp.s
+
+CMakeFiles/GLSDLProject1pt2.dir/Actor.cpp.obj: CMakeFiles/GLSDLProject1pt2.dir/flags.make
+CMakeFiles/GLSDLProject1pt2.dir/Actor.cpp.obj: CMakeFiles/GLSDLProject1pt2.dir/includes_CXX.rsp
+CMakeFiles/GLSDLProject1pt2.dir/Actor.cpp.obj: ../Actor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Game projects 2021\GLSDLProject1pt2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GLSDLProject1pt2.dir/Actor.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GLSDLProject1pt2.dir\Actor.cpp.obj -c "D:\Game projects 2021\GLSDLProject1pt2\Actor.cpp"
+
+CMakeFiles/GLSDLProject1pt2.dir/Actor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GLSDLProject1pt2.dir/Actor.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Game projects 2021\GLSDLProject1pt2\Actor.cpp" > CMakeFiles\GLSDLProject1pt2.dir\Actor.cpp.i
+
+CMakeFiles/GLSDLProject1pt2.dir/Actor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GLSDLProject1pt2.dir/Actor.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Game projects 2021\GLSDLProject1pt2\Actor.cpp" -o CMakeFiles\GLSDLProject1pt2.dir\Actor.cpp.s
+
+CMakeFiles/GLSDLProject1pt2.dir/Character.cpp.obj: CMakeFiles/GLSDLProject1pt2.dir/flags.make
+CMakeFiles/GLSDLProject1pt2.dir/Character.cpp.obj: CMakeFiles/GLSDLProject1pt2.dir/includes_CXX.rsp
+CMakeFiles/GLSDLProject1pt2.dir/Character.cpp.obj: ../Character.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Game projects 2021\GLSDLProject1pt2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GLSDLProject1pt2.dir/Character.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GLSDLProject1pt2.dir\Character.cpp.obj -c "D:\Game projects 2021\GLSDLProject1pt2\Character.cpp"
+
+CMakeFiles/GLSDLProject1pt2.dir/Character.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GLSDLProject1pt2.dir/Character.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Game projects 2021\GLSDLProject1pt2\Character.cpp" > CMakeFiles\GLSDLProject1pt2.dir\Character.cpp.i
+
+CMakeFiles/GLSDLProject1pt2.dir/Character.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GLSDLProject1pt2.dir/Character.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Game projects 2021\GLSDLProject1pt2\Character.cpp" -o CMakeFiles\GLSDLProject1pt2.dir\Character.cpp.s
+
+CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Collider.cpp.obj: CMakeFiles/GLSDLProject1pt2.dir/flags.make
+CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Collider.cpp.obj: CMakeFiles/GLSDLProject1pt2.dir/includes_CXX.rsp
+CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Collider.cpp.obj: ../DataTypes/Collider.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Game projects 2021\GLSDLProject1pt2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Collider.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GLSDLProject1pt2.dir\DataTypes\Collider.cpp.obj -c "D:\Game projects 2021\GLSDLProject1pt2\DataTypes\Collider.cpp"
+
+CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Collider.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Collider.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Game projects 2021\GLSDLProject1pt2\DataTypes\Collider.cpp" > CMakeFiles\GLSDLProject1pt2.dir\DataTypes\Collider.cpp.i
+
+CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Collider.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Collider.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Game projects 2021\GLSDLProject1pt2\DataTypes\Collider.cpp" -o CMakeFiles\GLSDLProject1pt2.dir\DataTypes\Collider.cpp.s
+
+CMakeFiles/GLSDLProject1pt2.dir/GameObject.cpp.obj: CMakeFiles/GLSDLProject1pt2.dir/flags.make
+CMakeFiles/GLSDLProject1pt2.dir/GameObject.cpp.obj: CMakeFiles/GLSDLProject1pt2.dir/includes_CXX.rsp
+CMakeFiles/GLSDLProject1pt2.dir/GameObject.cpp.obj: ../GameObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Game projects 2021\GLSDLProject1pt2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GLSDLProject1pt2.dir/GameObject.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GLSDLProject1pt2.dir\GameObject.cpp.obj -c "D:\Game projects 2021\GLSDLProject1pt2\GameObject.cpp"
+
+CMakeFiles/GLSDLProject1pt2.dir/GameObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GLSDLProject1pt2.dir/GameObject.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Game projects 2021\GLSDLProject1pt2\GameObject.cpp" > CMakeFiles\GLSDLProject1pt2.dir\GameObject.cpp.i
+
+CMakeFiles/GLSDLProject1pt2.dir/GameObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GLSDLProject1pt2.dir/GameObject.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Game projects 2021\GLSDLProject1pt2\GameObject.cpp" -o CMakeFiles\GLSDLProject1pt2.dir\GameObject.cpp.s
+
+CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Component.cpp.obj: CMakeFiles/GLSDLProject1pt2.dir/flags.make
+CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Component.cpp.obj: CMakeFiles/GLSDLProject1pt2.dir/includes_CXX.rsp
+CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Component.cpp.obj: ../DataTypes/Component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Game projects 2021\GLSDLProject1pt2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Component.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GLSDLProject1pt2.dir\DataTypes\Component.cpp.obj -c "D:\Game projects 2021\GLSDLProject1pt2\DataTypes\Component.cpp"
+
+CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Component.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Component.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Game projects 2021\GLSDLProject1pt2\DataTypes\Component.cpp" > CMakeFiles\GLSDLProject1pt2.dir\DataTypes\Component.cpp.i
+
+CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Component.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Component.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Game projects 2021\GLSDLProject1pt2\DataTypes\Component.cpp" -o CMakeFiles\GLSDLProject1pt2.dir\DataTypes\Component.cpp.s
+
 # Object files for target GLSDLProject1pt2
 GLSDLProject1pt2_OBJECTS = \
 "CMakeFiles/GLSDLProject1pt2.dir/main.cpp.obj" \
 "CMakeFiles/GLSDLProject1pt2.dir/Engine/Engine.cpp.obj" \
-"CMakeFiles/GLSDLProject1pt2.dir/Engine/Timer.cpp.obj"
+"CMakeFiles/GLSDLProject1pt2.dir/Engine/Timer.cpp.obj" \
+"CMakeFiles/GLSDLProject1pt2.dir/InputManager/InputManager.cpp.obj" \
+"CMakeFiles/GLSDLProject1pt2.dir/Actor.cpp.obj" \
+"CMakeFiles/GLSDLProject1pt2.dir/Character.cpp.obj" \
+"CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Collider.cpp.obj" \
+"CMakeFiles/GLSDLProject1pt2.dir/GameObject.cpp.obj" \
+"CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Component.cpp.obj"
 
 # External object files for target GLSDLProject1pt2
 GLSDLProject1pt2_EXTERNAL_OBJECTS =
@@ -129,11 +219,17 @@ GLSDLProject1pt2_EXTERNAL_OBJECTS =
 GLSDLProject1pt2.exe: CMakeFiles/GLSDLProject1pt2.dir/main.cpp.obj
 GLSDLProject1pt2.exe: CMakeFiles/GLSDLProject1pt2.dir/Engine/Engine.cpp.obj
 GLSDLProject1pt2.exe: CMakeFiles/GLSDLProject1pt2.dir/Engine/Timer.cpp.obj
+GLSDLProject1pt2.exe: CMakeFiles/GLSDLProject1pt2.dir/InputManager/InputManager.cpp.obj
+GLSDLProject1pt2.exe: CMakeFiles/GLSDLProject1pt2.dir/Actor.cpp.obj
+GLSDLProject1pt2.exe: CMakeFiles/GLSDLProject1pt2.dir/Character.cpp.obj
+GLSDLProject1pt2.exe: CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Collider.cpp.obj
+GLSDLProject1pt2.exe: CMakeFiles/GLSDLProject1pt2.dir/GameObject.cpp.obj
+GLSDLProject1pt2.exe: CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Component.cpp.obj
 GLSDLProject1pt2.exe: CMakeFiles/GLSDLProject1pt2.dir/build.make
 GLSDLProject1pt2.exe: CMakeFiles/GLSDLProject1pt2.dir/linklibs.rsp
 GLSDLProject1pt2.exe: CMakeFiles/GLSDLProject1pt2.dir/objects1.rsp
 GLSDLProject1pt2.exe: CMakeFiles/GLSDLProject1pt2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Game projects 2021\GLSDLProject1pt2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable GLSDLProject1pt2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Game projects 2021\GLSDLProject1pt2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable GLSDLProject1pt2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GLSDLProject1pt2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

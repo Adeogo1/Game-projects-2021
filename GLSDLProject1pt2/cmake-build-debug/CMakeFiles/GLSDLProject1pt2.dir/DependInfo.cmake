@@ -4,8 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/Game projects 2021/GLSDLProject1pt2/Actor.cpp" "D:/Game projects 2021/GLSDLProject1pt2/cmake-build-debug/CMakeFiles/GLSDLProject1pt2.dir/Actor.cpp.obj"
+  "D:/Game projects 2021/GLSDLProject1pt2/Character.cpp" "D:/Game projects 2021/GLSDLProject1pt2/cmake-build-debug/CMakeFiles/GLSDLProject1pt2.dir/Character.cpp.obj"
+  "D:/Game projects 2021/GLSDLProject1pt2/DataTypes/Collider.cpp" "D:/Game projects 2021/GLSDLProject1pt2/cmake-build-debug/CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Collider.cpp.obj"
+  "D:/Game projects 2021/GLSDLProject1pt2/DataTypes/Component.cpp" "D:/Game projects 2021/GLSDLProject1pt2/cmake-build-debug/CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Component.cpp.obj"
   "D:/Game projects 2021/GLSDLProject1pt2/Engine/Engine.cpp" "D:/Game projects 2021/GLSDLProject1pt2/cmake-build-debug/CMakeFiles/GLSDLProject1pt2.dir/Engine/Engine.cpp.obj"
   "D:/Game projects 2021/GLSDLProject1pt2/Engine/Timer.cpp" "D:/Game projects 2021/GLSDLProject1pt2/cmake-build-debug/CMakeFiles/GLSDLProject1pt2.dir/Engine/Timer.cpp.obj"
+  "D:/Game projects 2021/GLSDLProject1pt2/GameObject.cpp" "D:/Game projects 2021/GLSDLProject1pt2/cmake-build-debug/CMakeFiles/GLSDLProject1pt2.dir/GameObject.cpp.obj"
+  "D:/Game projects 2021/GLSDLProject1pt2/InputManager/InputManager.cpp" "D:/Game projects 2021/GLSDLProject1pt2/cmake-build-debug/CMakeFiles/GLSDLProject1pt2.dir/InputManager/InputManager.cpp.obj"
   "D:/Game projects 2021/GLSDLProject1pt2/main.cpp" "D:/Game projects 2021/GLSDLProject1pt2/cmake-build-debug/CMakeFiles/GLSDLProject1pt2.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -676,6 +676,18 @@ C:/libs/SDL/include/close_code.h
 
 D:/Game projects 2021/GLSDLProject1pt2/DataTypes/Constants.h
 
+D:/Game projects 2021/GLSDLProject1pt2/DataTypes/Structs.h
+iostream
+-
+Vector3.h
+D:/Game projects 2021/GLSDLProject1pt2/DataTypes/Vector3.h
+Vector2.h
+D:/Game projects 2021/GLSDLProject1pt2/DataTypes/Vector2.h
+
+D:/Game projects 2021/GLSDLProject1pt2/DataTypes/Vector2.h
+
+D:/Game projects 2021/GLSDLProject1pt2/DataTypes/Vector3.h
+
 D:/Game projects 2021/GLSDLProject1pt2/Engine/Engine.cpp
 Engine.h
 D:/Game projects 2021/GLSDLProject1pt2/Engine/Engine.h
@@ -689,14 +701,14 @@ SDL_mixer.h
 -
 SDL_image.h
 -
-SDL.h
--
-SDL_mixer.h
--
-SDL_image.h
+SDL2/SDL_image.h
 -
 ../DataTypes/Constants.h
 D:/Game projects 2021/GLSDLProject1pt2/DataTypes/Constants.h
+../DataTypes/Structs.h
+D:/Game projects 2021/GLSDLProject1pt2/DataTypes/Structs.h
+../InputManager/InputManager.h
+D:/Game projects 2021/GLSDLProject1pt2/InputManager/InputManager.h
 Timer.h
 D:/Game projects 2021/GLSDLProject1pt2/Engine/Timer.h
 
@@ -707,6 +719,16 @@ SDL_image.h
 -
 SDL_mixer.h
 -
+
+D:/Game projects 2021/GLSDLProject1pt2/InputManager/InputManager.cpp
+InputManager.h
+D:/Game projects 2021/GLSDLProject1pt2/InputManager/InputManager.h
+
+D:/Game projects 2021/GLSDLProject1pt2/InputManager/InputManager.h
+SDL.h
+-
+../Engine/Engine.h
+D:/Game projects 2021/GLSDLProject1pt2/Engine/Engine.h
 
 D:/Game projects 2021/GLSDLProject1pt2/main.cpp
 iostream

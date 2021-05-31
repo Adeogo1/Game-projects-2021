@@ -141,6 +141,114 @@ GLSDLProject1pt2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/build
 .PHONY : GLSDLProject1pt2/fast
 
+Actor.obj: Actor.cpp.obj
+
+.PHONY : Actor.obj
+
+# target to build an object file
+Actor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/Actor.cpp.obj
+.PHONY : Actor.cpp.obj
+
+Actor.i: Actor.cpp.i
+
+.PHONY : Actor.i
+
+# target to preprocess a source file
+Actor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/Actor.cpp.i
+.PHONY : Actor.cpp.i
+
+Actor.s: Actor.cpp.s
+
+.PHONY : Actor.s
+
+# target to generate assembly for a file
+Actor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/Actor.cpp.s
+.PHONY : Actor.cpp.s
+
+Character.obj: Character.cpp.obj
+
+.PHONY : Character.obj
+
+# target to build an object file
+Character.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/Character.cpp.obj
+.PHONY : Character.cpp.obj
+
+Character.i: Character.cpp.i
+
+.PHONY : Character.i
+
+# target to preprocess a source file
+Character.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/Character.cpp.i
+.PHONY : Character.cpp.i
+
+Character.s: Character.cpp.s
+
+.PHONY : Character.s
+
+# target to generate assembly for a file
+Character.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/Character.cpp.s
+.PHONY : Character.cpp.s
+
+DataTypes/Collider.obj: DataTypes/Collider.cpp.obj
+
+.PHONY : DataTypes/Collider.obj
+
+# target to build an object file
+DataTypes/Collider.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Collider.cpp.obj
+.PHONY : DataTypes/Collider.cpp.obj
+
+DataTypes/Collider.i: DataTypes/Collider.cpp.i
+
+.PHONY : DataTypes/Collider.i
+
+# target to preprocess a source file
+DataTypes/Collider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Collider.cpp.i
+.PHONY : DataTypes/Collider.cpp.i
+
+DataTypes/Collider.s: DataTypes/Collider.cpp.s
+
+.PHONY : DataTypes/Collider.s
+
+# target to generate assembly for a file
+DataTypes/Collider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Collider.cpp.s
+.PHONY : DataTypes/Collider.cpp.s
+
+DataTypes/Component.obj: DataTypes/Component.cpp.obj
+
+.PHONY : DataTypes/Component.obj
+
+# target to build an object file
+DataTypes/Component.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Component.cpp.obj
+.PHONY : DataTypes/Component.cpp.obj
+
+DataTypes/Component.i: DataTypes/Component.cpp.i
+
+.PHONY : DataTypes/Component.i
+
+# target to preprocess a source file
+DataTypes/Component.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Component.cpp.i
+.PHONY : DataTypes/Component.cpp.i
+
+DataTypes/Component.s: DataTypes/Component.cpp.s
+
+.PHONY : DataTypes/Component.s
+
+# target to generate assembly for a file
+DataTypes/Component.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/DataTypes/Component.cpp.s
+.PHONY : DataTypes/Component.cpp.s
+
 Engine/Engine.obj: Engine/Engine.cpp.obj
 
 .PHONY : Engine/Engine.obj
@@ -195,6 +303,60 @@ Engine/Timer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/Engine/Timer.cpp.s
 .PHONY : Engine/Timer.cpp.s
 
+GameObject.obj: GameObject.cpp.obj
+
+.PHONY : GameObject.obj
+
+# target to build an object file
+GameObject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/GameObject.cpp.obj
+.PHONY : GameObject.cpp.obj
+
+GameObject.i: GameObject.cpp.i
+
+.PHONY : GameObject.i
+
+# target to preprocess a source file
+GameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/GameObject.cpp.i
+.PHONY : GameObject.cpp.i
+
+GameObject.s: GameObject.cpp.s
+
+.PHONY : GameObject.s
+
+# target to generate assembly for a file
+GameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/GameObject.cpp.s
+.PHONY : GameObject.cpp.s
+
+InputManager/InputManager.obj: InputManager/InputManager.cpp.obj
+
+.PHONY : InputManager/InputManager.obj
+
+# target to build an object file
+InputManager/InputManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/InputManager/InputManager.cpp.obj
+.PHONY : InputManager/InputManager.cpp.obj
+
+InputManager/InputManager.i: InputManager/InputManager.cpp.i
+
+.PHONY : InputManager/InputManager.i
+
+# target to preprocess a source file
+InputManager/InputManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/InputManager/InputManager.cpp.i
+.PHONY : InputManager/InputManager.cpp.i
+
+InputManager/InputManager.s: InputManager/InputManager.cpp.s
+
+.PHONY : InputManager/InputManager.s
+
+# target to generate assembly for a file
+InputManager/InputManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GLSDLProject1pt2.dir\build.make CMakeFiles/GLSDLProject1pt2.dir/InputManager/InputManager.cpp.s
+.PHONY : InputManager/InputManager.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -231,12 +393,30 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... GLSDLProject1pt2
+	@echo ... Actor.obj
+	@echo ... Actor.i
+	@echo ... Actor.s
+	@echo ... Character.obj
+	@echo ... Character.i
+	@echo ... Character.s
+	@echo ... DataTypes/Collider.obj
+	@echo ... DataTypes/Collider.i
+	@echo ... DataTypes/Collider.s
+	@echo ... DataTypes/Component.obj
+	@echo ... DataTypes/Component.i
+	@echo ... DataTypes/Component.s
 	@echo ... Engine/Engine.obj
 	@echo ... Engine/Engine.i
 	@echo ... Engine/Engine.s
 	@echo ... Engine/Timer.obj
 	@echo ... Engine/Timer.i
 	@echo ... Engine/Timer.s
+	@echo ... GameObject.obj
+	@echo ... GameObject.i
+	@echo ... GameObject.s
+	@echo ... InputManager/InputManager.obj
+	@echo ... InputManager/InputManager.i
+	@echo ... InputManager/InputManager.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

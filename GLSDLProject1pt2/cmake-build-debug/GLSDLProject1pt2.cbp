@@ -84,6 +84,30 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Game projects 2021/GLSDLProject1pt2/Actor.cpp">
+			<Option target="GLSDLProject1pt2"/>
+		</Unit>
+		<Unit filename="D:/Game projects 2021/GLSDLProject1pt2/Actor.h">
+			<Option target="GLSDLProject1pt2"/>
+		</Unit>
+		<Unit filename="D:/Game projects 2021/GLSDLProject1pt2/Character.cpp">
+			<Option target="GLSDLProject1pt2"/>
+		</Unit>
+		<Unit filename="D:/Game projects 2021/GLSDLProject1pt2/Character.h">
+			<Option target="GLSDLProject1pt2"/>
+		</Unit>
+		<Unit filename="D:/Game projects 2021/GLSDLProject1pt2/DataTypes/Collider.cpp">
+			<Option target="GLSDLProject1pt2"/>
+		</Unit>
+		<Unit filename="D:/Game projects 2021/GLSDLProject1pt2/DataTypes/Collider.h">
+			<Option target="GLSDLProject1pt2"/>
+		</Unit>
+		<Unit filename="D:/Game projects 2021/GLSDLProject1pt2/DataTypes/Component.cpp">
+			<Option target="GLSDLProject1pt2"/>
+		</Unit>
+		<Unit filename="D:/Game projects 2021/GLSDLProject1pt2/DataTypes/Component.h">
+			<Option target="GLSDLProject1pt2"/>
+		</Unit>
 		<Unit filename="D:/Game projects 2021/GLSDLProject1pt2/DataTypes/Constants.h">
 			<Option target="GLSDLProject1pt2"/>
 		</Unit>
@@ -100,6 +124,18 @@
 			<Option target="GLSDLProject1pt2"/>
 		</Unit>
 		<Unit filename="D:/Game projects 2021/GLSDLProject1pt2/Engine/Timer.h">
+			<Option target="GLSDLProject1pt2"/>
+		</Unit>
+		<Unit filename="D:/Game projects 2021/GLSDLProject1pt2/GameObject.cpp">
+			<Option target="GLSDLProject1pt2"/>
+		</Unit>
+		<Unit filename="D:/Game projects 2021/GLSDLProject1pt2/GameObject.h">
+			<Option target="GLSDLProject1pt2"/>
+		</Unit>
+		<Unit filename="D:/Game projects 2021/GLSDLProject1pt2/InputManager/InputManager.cpp">
+			<Option target="GLSDLProject1pt2"/>
+		</Unit>
+		<Unit filename="D:/Game projects 2021/GLSDLProject1pt2/InputManager/InputManager.h">
 			<Option target="GLSDLProject1pt2"/>
 		</Unit>
 		<Unit filename="D:/Game projects 2021/GLSDLProject1pt2/main.cpp">
