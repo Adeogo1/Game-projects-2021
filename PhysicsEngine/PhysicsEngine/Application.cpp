@@ -2,8 +2,32 @@
 #include <GLFW/glfw3.h>
 using namespace std;
 
+
+#pragma region ErrorCallback
+GLFWerrorfun glfwSetErrorCallback(GLFWerrorfun _cbfun);
+typedef void(*GLFWerrorfun)(int, const char*);
+
+void error_callback(int _error, const char* _description) {
+    fprintf(stderr, "Error: %s\n", _description);
+}
+#pragma endregion
+
+#pragma region InputCallback
+GLFWkeyfun glfwSetKeyCallback(GLFWwindow* _window, GLFWkeyfun _cbfun);
+typedef void(*GLFWkeyfun)(GLFWwindow*, int, int, int, int);
+void key_callback(GLFWwindow* _window, int _key, int _scancode, int _action, int _mods) {
+
+}
+
+#pragma endregion
+
+
+
 int main(void)
 {
+
+    glfwSetErrorCallback(error_callback);
+    glfwSetKeyCallback(key_callback);
     GLFWwindow* window;
 
     /* Initialize the library */
@@ -24,6 +48,20 @@ int main(void)
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {
+
+        //UpdateInput
+
+        //Update
+
+        //Draw
+
+        //Clear
+
+        //Draw
+
+        //emd Draw
+
+
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
 
