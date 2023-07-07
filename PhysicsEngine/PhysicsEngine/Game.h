@@ -1,9 +1,8 @@
 #pragma once
-#include <iostream>
-#include <map>
+#include "RepeatedIncludes.h"
 #include <SDL.h>
 #include "Maths.h"
-using namespace std;
+#include "Actor.h"
 using namespace Maths;
 
 
@@ -22,8 +21,14 @@ public:
 	bool Initialize();
 	void RunLoop();
 	void Shutdown();
+	void AddActor(Actor* _actor);
+	void RemoveActor(Actor* _actor);
 
 private:
+
+	vector<Actor*> m_Actors;
+	vector<Actor*> m_PendingActors;
+	bool m_UpdatingActor;
 
 	void ProcessInput();
 	bool GetAxis(char _axis);

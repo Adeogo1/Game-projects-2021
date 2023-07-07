@@ -64,11 +64,47 @@ void Game::RunLoop()
 void Game::Shutdown()
 {
 
+	while (!m_Actors.empty())
+	{
+		delete m_Actors.back();
+	}
+
 	SDL_DestroyRenderer(m_Renderer);
 
 	SDL_DestroyWindow(m_Window);
 
 	SDL_Quit();
+}
+
+void Game::AddActor(Actor* _actor)
+{
+	if (m_UpdatingActor)
+	{
+		m_PendingActors.emplace_back(_actor);
+	}
+	else
+	{
+		m_Actors.emplace_back(_actor);
+	}
+
+}
+
+void Game::RemoveActor(Actor* _actor)
+{
+	auto iter = find(m_PendingActors.begin(), m_PendingActors.end(), _actor);
+	if (iter != m_PendingActors.end())
+	{
+		iter_swap(iter, m_PendingActors.end() - 1);
+		m_PendingActors.pop_back();
+	}
+
+	iter = find(m_Actors.begin(), m_Actors.end(), _actor);
+	if (iter != m_Actors.end())
+	{
+		iter_swap(iter, m_Actors.end() - 1);
+		m_Actors.pop_back();
+	}
+
 }
 
 void Game::ProcessInput()
@@ -128,33 +164,63 @@ void Game::UpdateGame()
 	m_TicksCount = SDL_GetTicks();
 	deltaTime = Clamp(deltaTime, deltaTime,  0.05f);
 #pragma endregion
-	m_PaddlePos.y = Clamp(m_PaddlePos.y, (paddleH) + THICKNESS, 768.0f - THICKNESS);
-	if (m_PaddleDir != 0)
-	{
-		m_PaddlePos.y += m_PaddleDir * 300.0f * deltaTime;
-	}
-	cout << m_BallPos.y << endl;
-	
-	m_BallPos.x += m_BallVel.x * deltaTime;
-	m_BallPos.y += m_BallVel.y * deltaTime;
-	if ((m_BallPos.y <= THICKNESS || m_BallPos.y >= 768 - THICKNESS)&& m_BallVel.y <0.0f)
-	{
-		m_BallVel.y *= -1;
-	}
-	if ( m_BallPos.y >= 768 - THICKNESS && m_BallVel.y >0.0f)
-	{
-		m_BallVel.y *= -1;
-	}
-	if ( m_BallPos.x >= 1024 - THICKNESS && m_BallVel.x >0.0f)
-	{
-		m_BallVel.x *= -1;
-	}
-	float diff = m_BallPos.y - m_PaddlePos.y;
-	diff = (diff < 0) ? diff *= -1 : diff;
 
-	if (diff <= paddleH/2.0f && m_BallPos.x <=25.0f && m_BallPos.x>= 2.0f && m_BallVel.x < 0.0f)
+#pragma region PaddleStuff
+	//m_PaddlePos.y = Clamp(m_PaddlePos.y, (paddleH) + THICKNESS, 768.0f - THICKNESS);
+	//if (m_PaddleDir != 0)
+	//{
+	//	m_PaddlePos.y += m_PaddleDir * 300.0f * deltaTime;
+	//}
+	//cout << m_BallPos.y << endl;
+	//
+	//m_BallPos.x += m_BallVel.x * deltaTime;
+	//m_BallPos.y += m_BallVel.y * deltaTime;
+	//if ((m_BallPos.y <= THICKNESS)&& m_BallVel.y <0.0f)
+	//{
+	//	m_BallVel.y *= -1;
+	//}
+	//if ( m_BallPos.y >= 768 - THICKNESS && m_BallVel.y >0.0f)
+	//{
+	//	m_BallVel.y *= -1;
+	//}
+	//if ( m_BallPos.x >= 1024 - THICKNESS && m_BallVel.x >0.0f)
+	//{
+	//	m_BallVel.x *= -1;
+	//}
+	//float diff = m_BallPos.y - m_PaddlePos.y;
+	//diff = (diff < 0) ? diff *= -1 : diff;
+
+	//if (diff <= paddleH/2.0f && m_BallPos.x <=25.0f && m_BallPos.x>= 20.0f && m_BallVel.x < 0.0f)
+	//{
+	//	m_BallVel.x *= -1.0f;
+	//}
+#pragma endregion
+
+	m_UpdatingActor = true;
+	for (auto actor : m_Actors)
 	{
-		m_BallVel.x *= -1.0f;
+		actor->Update(deltaTime);
+	}
+	m_UpdatingActor = false;
+
+	for (auto pending : m_PendingActors)
+	{
+		m_Actors.emplace_back(pending);
+	}
+	m_PendingActors.clear();
+
+	vector<Actor*> deadActor;
+	for (auto actor : m_Actors)
+	{
+		if (actor->GetState() == Actor::EDead)
+		{
+			deadActor.emplace_back(actor);
+		}
+	}
+
+	for (auto actors : deadActor)
+	{
+		delete actors;
 	}
 
 	//SDL_Log("deltaTime %f", deltaTime);
