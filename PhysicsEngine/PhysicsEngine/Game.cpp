@@ -13,6 +13,8 @@ Game::Game()
 	m_PaddlePos = Vector2(10, 768.0f/2.0f);
 	m_PaddleDir = 0;
 	m_BallVel = Vector2(-200.0f, 235.0f);
+	m_UpdatingActor = false;
+	m_TicksCount = 0;
 }
 
 Game::~Game()
@@ -45,7 +47,26 @@ bool Game::Initialize()
 	if (!m_Renderer)
 	{
 		SDL_Log("Renderer Unsuccessful:  %s", SDL_GetError());
+		
+		return false;
 	}
+
+	if (IMG_Init(IMG_INIT_PNG) == 0) {
+		SDL_Log("SDL Image did not Initialize:  %s", SDL_GetError());
+		return false;
+	}
+
+	Vector2 test(5, 5);
+	test = test * 5.0f;
+	test.Print();
+	//test *= 2.5f;
+	//test.Print();
+	//test *= Vector2(3.25f, 8.0f);
+	//test.Print();
+	test = Vector2(1, 5) * test;
+	test.Print();
+
+
 
 	
 	return true;
@@ -68,6 +89,8 @@ void Game::Shutdown()
 	{
 		delete m_Actors.back();
 	}
+
+	IMG_Quit();
 
 	SDL_DestroyRenderer(m_Renderer);
 

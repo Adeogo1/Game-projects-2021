@@ -14,7 +14,7 @@ public:
 
 	~Component();
 
-private:
+protected:
 	class Actor* m_Owner;
 
 	int m_UpdateOrder;

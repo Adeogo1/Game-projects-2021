@@ -1,6 +1,7 @@
 #pragma once
 #include "RepeatedIncludes.h"
 #include <SDL.h>
+#include <SDL_image.h>
 #include "Maths.h"
 #include "Actor.h"
 using namespace Maths;
