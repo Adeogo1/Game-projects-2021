@@ -12,6 +12,26 @@ using namespace Maths;
  const int THICKNESS = 15;
  const float paddleH = 100.0f;
 
+ const float Vertices[] = {
+	 -0.5f, 0.5f, 0.0f, //vertex 0 
+	 0.5f, 0.5f, 0.0f, //vertex 1
+	 0.5f, -0.5f, 0.0f, //vertex 2
+	 -0.5f, -0.5f, 0.0f,// vertex 3
+ };
+
+ unsigned short indexBuffer[] = {
+	 0,1,2,
+	 2,3,0
+ };
+
+ const float Vertices2D[][6] = {
+	 { -0.5f, 0.5f, 0.0f},
+	 {0.5f, 0.5f, 0.0f},
+	 {0.5f, -0.5f, 0.0f },
+	 {0.5f, -0.5f, 0.0f},
+	 { -0.5f, -0.5f, 0.0f},
+	 { -0.5f, 0.5f, 0.0f}
+ };
 
 class Game
 {
