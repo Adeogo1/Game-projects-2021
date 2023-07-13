@@ -1,5 +1,5 @@
 #pragma once
-#include <glew.h>
+
 #include "RepeatedIncludes.h"
 #include <SDL_image.h>
 #include "Maths.h"
@@ -19,7 +19,7 @@ using namespace Maths;
 	 -0.5f, -0.5f, 0.0f,// vertex 3
  };
 
- unsigned short indexBuffer[] = {
+ unsigned int indexBuffer[] = {
 	 0,1,2,
 	 2,3,0
  };
@@ -33,6 +33,11 @@ using namespace Maths;
 	 { -0.5f, 0.5f, 0.0f}
  };
 
+
+ static int CreateShader(const string& _vertexShader, const string& _fragmentShader) {
+
+ }
+
 class Game
 {
 public:
@@ -42,6 +47,7 @@ public:
 	bool Initialize();
 	void RunLoop();
 	void Shutdown();
+	void InitSpriteVerts();
 	void AddActor(Actor* _actor);
 	void RemoveActor(Actor* _actor);
 
@@ -58,6 +64,8 @@ private:
 	bool m_IsRunning;
 	Uint32 m_TicksCount;
 	SDL_GLContext m_Context;
+
+	class VertexArray* m_SpriteVerts;
 	
 
 };

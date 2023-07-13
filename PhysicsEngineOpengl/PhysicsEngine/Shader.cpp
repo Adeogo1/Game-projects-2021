@@ -1,0 +1,122 @@
+#include "Shader.h"
+
+
+
+Shader::Shader()
+{
+	m_ShaderProgram =
+		m_VertexShader = m_FragShader = 0;
+}
+
+Shader::~Shader()
+{
+}
+
+bool Shader::Load(const string& _vertName, const string& _fragName)
+{
+	//Compile vertex and fragment shaders 
+	if (!CompileShader(_vertName, GL_VERTEX_SHADER, m_VertexShader) ||
+		!CompileShader(_fragName, GL_FRAGMENT_SHADER, m_FragShader))
+	{
+		return false;
+	}
+
+	//Now create a shader program that links together the vertex/frag shaders
+	m_ShaderProgram = glCreateProgram();
+	glAttachShader(m_ShaderProgram, m_VertexShader);
+	glAttachShader(m_ShaderProgram, m_FragShader);
+	glLinkProgram(m_ShaderProgram);
+
+	//vertify that the program linked successfully
+	if (!IsValidProgram())
+	{
+		return false;
+	}
+	return true;
+
+}
+
+void Shader::SetActive()
+{
+	glUseProgram(m_ShaderProgram);
+}
+
+void Shader::Unload()
+{
+	glDeleteProgram(m_ShaderProgram);
+	glDeleteShader(m_VertexShader);
+	glDeleteShader(m_FragShader);
+}
+
+bool Shader::CompileShader(const string& _fileName, GLenum _shaderType, GLuint& outShader)
+{
+	//open file
+	ifstream shaderFile(_fileName);
+	if (shaderFile.is_open())
+	{
+		//Read all the text into a string 
+		stringstream sstream;
+		sstream << shaderFile.rdbuf();
+		string contents = sstream.str();
+		const char* contentsChar = contents.c_str();
+
+		//crate a shader of the specified type
+		outShader = glCreateShader(_shaderType);
+
+		//set the source characters and try to compile
+		glShaderSource(outShader,1, &(contentsChar), nullptr);
+
+		glCompileShader(outShader);
+
+		if (!IsCompiled(outShader))
+		{
+			SDL_Log("Failed to compile shader %s", _fileName);
+			return false;
+		}
+
+	}
+	else
+	{
+		SDL_Log("Shader file not found: %s", _fileName.c_str());
+		return false;
+	}
+	return true;
+}
+
+bool Shader::IsCompiled(GLuint _shader)
+{
+	GLint status;
+
+	//Query the compile status
+	glGetShaderiv(_shader, GL_COMPILE_STATUS, &status);
+	if (status != GL_TRUE)
+	{
+		char buffer[512];
+		memset(buffer, 0, 512);
+
+		glGetShaderInfoLog(_shader, 511, nullptr, buffer);
+
+		SDL_Log("GLSL Compile Failed: \n%s", buffer);
+
+		return false;
+	}
+	return true;
+}
+
+bool Shader::IsValidProgram()
+{
+	GLint status;
+	glGetProgramiv(m_ShaderProgram, GL_LINK_STATUS, &status);
+	if (status != GL_TRUE)
+	{
+		char buffer[512];
+		memset(buffer, 0, 512);
+
+		glGetProgramInfoLog(m_ShaderProgram, 511, nullptr, buffer);
+
+		SDL_Log("Program is not Valid: \n%s", buffer);
+
+		return false;
+	}
+	return true;
+}

@@ -1,4 +1,6 @@
 #include "Game.h"
+#include "VertexArray.h"
+
 
 
 
@@ -116,6 +118,11 @@ void Game::Shutdown()
 	SDL_DestroyWindow(m_Window);
 
 	SDL_Quit();
+}
+
+void Game::InitSpriteVerts()
+{
+	m_SpriteVerts = new VertexArray(Vertices, 4, indexBuffer, 6);
 }
 
 void Game::AddActor(Actor* _actor)

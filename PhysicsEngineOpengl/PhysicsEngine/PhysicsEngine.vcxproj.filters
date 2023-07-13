@@ -16,6 +16,9 @@
     <Filter Include="Header Files\Components">
       <UniqueIdentifier>{f874ff91-429c-451f-8b06-059cd52d15b1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Shaders">
+      <UniqueIdentifier>{776b37a4-9849-4d72-b7b3-b910e27fdda9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -37,6 +40,9 @@
       <Filter>Header Files\Components</Filter>
     </ClCompile>
     <ClCompile Include="VertexArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -65,5 +71,16 @@
     <ClInclude Include="VertexArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Basic.vert">
+      <Filter>Header Files\Shaders</Filter>
+    </None>
+    <None Include="Basic.frag">
+      <Filter>Header Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
