@@ -12,17 +12,7 @@ using namespace Maths;
  const int THICKNESS = 15;
  const float paddleH = 100.0f;
 
- const float Vertices[] = {
-	 -0.5f, 0.5f, 0.0f, //vertex 0 
-	 0.5f, 0.5f, 0.0f, //vertex 1
-	 0.5f, -0.5f, 0.0f, //vertex 2
-	 -0.5f, -0.5f, 0.0f,// vertex 3
- };
 
- unsigned int indexBuffer[] = {
-	 0,1,2,
-	 2,3,0
- };
 
  const float Vertices2D[][6] = {
 	 { -0.5f, 0.5f, 0.0f},
@@ -45,6 +35,7 @@ public:
 	Game();
 	~Game();
 	bool Initialize();
+	bool LoadShaders();
 	void RunLoop();
 	void Shutdown();
 	void InitSpriteVerts();
@@ -66,6 +57,9 @@ private:
 	SDL_GLContext m_Context;
 
 	class VertexArray* m_SpriteVerts;
+
+	class Shader* m_SpriteShader;
+	//vector <class Sp
 	
 
 };

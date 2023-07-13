@@ -45,6 +45,9 @@
     <ClCompile Include="Shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SpriteComponent.cpp">
+      <Filter>Header Files\Components</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -74,12 +77,15 @@
     <ClInclude Include="Shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SpriteComponent.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Basic.vert">
+    <None Include="Shaders\Basic.frag">
       <Filter>Header Files\Shaders</Filter>
     </None>
-    <None Include="Basic.frag">
+    <None Include="Shaders\Basic.vert">
       <Filter>Header Files\Shaders</Filter>
     </None>
   </ItemGroup>

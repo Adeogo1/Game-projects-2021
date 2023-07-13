@@ -153,6 +153,7 @@
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="SpriteComponent.cpp" />
     <ClCompile Include="TransformComponent.cpp" />
     <ClCompile Include="VertexArray.cpp" />
   </ItemGroup>
@@ -164,12 +165,13 @@
     <ClInclude Include="Maths.h" />
     <ClInclude Include="RepeatedIncludes.h" />
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="SpriteComponent.h" />
     <ClInclude Include="TransformComponent.h" />
     <ClInclude Include="VertexArray.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Basic.frag" />
-    <None Include="Basic.vert" />
+    <None Include="Shaders\Basic.frag" />
+    <None Include="Shaders\Basic.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,5 +1,6 @@
 #include "Game.h"
 #include "VertexArray.h"
+#include "Shader.h"
 
 
 
@@ -76,6 +77,12 @@ bool Game::Initialize()
 	// GLEW will emit a benign error code,
 	glGetError();
 
+	if (!LoadShaders())
+	{
+		SDL_Log("Failed to load shaders.");
+		return false;
+	}
+	InitSpriteVerts();
 
 	Vector2 test(5, 5);
 	test = test * 5.0f;
@@ -90,6 +97,17 @@ bool Game::Initialize()
 
 
 	
+	return true;
+}
+
+bool Game::LoadShaders()
+{
+	m_SpriteShader = new Shader();
+	if (!m_SpriteShader->Load("Shaders/Basic.vert", "Shaders/Basic.frag"))
+	{
+		return false;
+	}
+	m_SpriteShader->SetActive();
 	return true;
 }
 
@@ -111,7 +129,9 @@ void Game::Shutdown()
 		delete m_Actors.back();
 	}
 
-	IMG_Quit();
+	delete m_SpriteVerts;
+	m_SpriteShader->Unload();
+	delete m_SpriteShader;
 
 	SDL_GL_DeleteContext(m_Context);
 
@@ -122,6 +142,17 @@ void Game::Shutdown()
 
 void Game::InitSpriteVerts()
 {
+	const float Vertices[] = {
+	-0.5f, 0.5f, 0.0f, //vertex 0 
+	0.5f, 0.5f, 0.0f, //vertex 1
+	0.5f, -0.5f, 0.0f, //vertex 2
+	-0.5f, -0.5f, 0.0f,// vertex 3
+	};
+
+	unsigned int indexBuffer[] = {
+		0,1,2,
+		2,3,0
+	};
 	m_SpriteVerts = new VertexArray(Vertices, 4, indexBuffer, 6);
 }
 
@@ -239,7 +270,16 @@ void Game::GenerateOutput()
 	glClearColor(0.86f, 0.86f, 0.86f, 1.0f);
 
 	glClear(GL_COLOR_BUFFER_BIT);
-	//TODO: Draw Scene
+	//set sprite shader and vertex array objects active
+	m_SpriteShader->SetActive();
+	m_SpriteVerts->SetActive();
+
+	//draw all sprites
+	//for (auto sprite : m_Sprites)
+	//{
+	//	sprite->Draw(m_SpriteShader);
+	//}
+
 
 	//swap buffers, which also displays the scene
 
