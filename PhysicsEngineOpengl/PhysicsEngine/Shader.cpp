@@ -14,26 +14,31 @@ Shader::~Shader()
 
 bool Shader::Load(const string& _vertName, const string& _fragName)
 {
-	//Compile vertex and fragment shaders 
-	if (!CompileShader(_vertName, GL_VERTEX_SHADER, m_VertexShader) ||
-		!CompileShader(_fragName, GL_FRAGMENT_SHADER, m_FragShader))
+	// Compile vertex and pixel shaders
+	if (!CompileShader(_vertName,
+		GL_VERTEX_SHADER,
+		m_VertexShader) ||
+		!CompileShader(_fragName,
+			GL_FRAGMENT_SHADER,
+			m_FragShader))
 	{
 		return false;
 	}
 
-	//Now create a shader program that links together the vertex/frag shaders
+	// Now create a shader program that
+	// links together the vertex/frag shaders
 	m_ShaderProgram = glCreateProgram();
 	glAttachShader(m_ShaderProgram, m_VertexShader);
 	glAttachShader(m_ShaderProgram, m_FragShader);
 	glLinkProgram(m_ShaderProgram);
 
-	//vertify that the program linked successfully
+	// Verify that the program linked successfully
 	if (!IsValidProgram())
 	{
 		return false;
 	}
-	return true;
 
+	return true;
 }
 
 void Shader::SetActive()
@@ -50,36 +55,34 @@ void Shader::Unload()
 
 bool Shader::CompileShader(const string& _fileName, GLenum _shaderType, GLuint& outShader)
 {
-	//open file
-	ifstream shaderFile(_fileName);
+	// Open file
+	std::ifstream shaderFile(_fileName);
 	if (shaderFile.is_open())
 	{
-		//Read all the text into a string 
-		stringstream sstream;
+		// Read all the text into a string
+		std::stringstream sstream;
 		sstream << shaderFile.rdbuf();
-		string contents = sstream.str();
+		std::string contents = sstream.str();
 		const char* contentsChar = contents.c_str();
 
-		//crate a shader of the specified type
+		// Create a shader of the specified type
 		outShader = glCreateShader(_shaderType);
-
-		//set the source characters and try to compile
-		glShaderSource(outShader,1, &(contentsChar), nullptr);
-
+		// Set the source characters and try to compile
+		glShaderSource(outShader, 1, &(contentsChar), nullptr);
 		glCompileShader(outShader);
 
 		if (!IsCompiled(outShader))
 		{
-			SDL_Log("Failed to compile shader %s", _fileName);
+			SDL_Log("Failed to compile shader %s", _fileName.c_str());
 			return false;
 		}
-
 	}
 	else
 	{
 		SDL_Log("Shader file not found: %s", _fileName.c_str());
 		return false;
 	}
+
 	return true;
 }
 

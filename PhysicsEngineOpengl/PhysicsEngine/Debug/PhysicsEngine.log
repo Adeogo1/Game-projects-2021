@@ -1,1 +1,23 @@
-﻿  PhysicsEngine.vcxproj -> C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\Debug\PhysicsEngine.exe
+﻿  Game.cpp
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(108,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(112,28): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(117,22): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(122,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(166,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(170,46): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Ship.cpp
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(108,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(112,28): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(117,22): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(122,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(166,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(170,46): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  SpriteComponent.cpp
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(108,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(112,28): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(117,22): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(122,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(166,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(170,46): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  PhysicsEngine.vcxproj -> C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\Debug\PhysicsEngine.exe

@@ -1,6 +1,8 @@
 #include "Game.h"
 #include "VertexArray.h"
 #include "Shader.h"
+#include "SpriteComponent.h"
+#include "Ship.h"
 
 
 
@@ -14,6 +16,7 @@ Game::Game()
 	m_UpdatingActor = false;
 	m_TicksCount = 0;
 	m_Context = nullptr;
+	m_SpriteShader = nullptr;
 }
 
 Game::~Game()
@@ -84,6 +87,8 @@ bool Game::Initialize()
 	}
 	InitSpriteVerts();
 
+	m_Ship = new Ship(this,nullptr, "ship");
+
 	Vector2 test(5, 5);
 	test = test * 5.0f;
 	test.Print();
@@ -95,7 +100,7 @@ bool Game::Initialize()
 	test.Print();
 
 
-
+	m_TicksCount = SDL_GetTicks();
 	
 	return true;
 }
@@ -107,6 +112,7 @@ bool Game::LoadShaders()
 	{
 		return false;
 	}
+
 	m_SpriteShader->SetActive();
 	return true;
 }
@@ -142,18 +148,20 @@ void Game::Shutdown()
 
 void Game::InitSpriteVerts()
 {
-	const float Vertices[] = {
-	-0.5f, 0.5f, 0.0f, //vertex 0 
-	0.5f, 0.5f, 0.0f, //vertex 1
-	0.5f, -0.5f, 0.0f, //vertex 2
-	-0.5f, -0.5f, 0.0f,// vertex 3
+
+	float vertices[] = {
+		-0.5f,  0.5f, 0.f, 0.f, 0.f, // top left
+		 0.5f,  0.5f, 0.f, 1.f, 0.f, // top right
+		 0.5f, -0.5f, 0.f, 1.f, 1.f, // bottom right
+		-0.5f, -0.5f, 0.f, 0.f, 1.f  // bottom left
 	};
 
-	unsigned int indexBuffer[] = {
-		0,1,2,
-		2,3,0
+	unsigned int indices[] = {
+		0, 1, 2,
+		2, 3, 0
 	};
-	m_SpriteVerts = new VertexArray(Vertices, 4, indexBuffer, 6);
+
+	m_SpriteVerts = new VertexArray(vertices, 4, indices, 6);
 }
 
 void Game::AddActor(Actor* _actor)
@@ -187,6 +195,34 @@ void Game::RemoveActor(Actor* _actor)
 
 }
 
+
+void Game::AddSprite(SpriteComponent* sprite)
+{
+	// Find the insertion point in the sorted vector
+	// (The first element with a higher draw order than me)
+	int myDrawOrder = sprite->GetDrawOrder();
+	auto iter = m_Sprites.begin();
+	for (;
+		iter != m_Sprites.end();
+		++iter)
+	{
+		if (myDrawOrder < (*iter)->GetDrawOrder())
+		{
+			break;
+		}
+	}
+
+	// Inserts element before position of iterator
+	m_Sprites.insert(iter, sprite);
+}
+
+void Game::RemoveSprite(SpriteComponent* sprite)
+{
+	auto iter = std::find(m_Sprites.begin(), m_Sprites.end(), sprite);
+	m_Sprites.erase(iter);
+}
+
+
 void Game::ProcessInput()
 {
 	SDL_Event event;
@@ -208,6 +244,14 @@ void Game::ProcessInput()
 		m_IsRunning = false;
 	}
 
+
+
+	m_UpdatingActor = true;
+	for (auto actors: m_Actors)
+	{
+		actors->ProcessInput(state);
+	}
+	m_UpdatingActor = false;
 }
 
 //bool Game::GetAxis( char _axis)
@@ -270,15 +314,16 @@ void Game::GenerateOutput()
 	glClearColor(0.86f, 0.86f, 0.86f, 1.0f);
 
 	glClear(GL_COLOR_BUFFER_BIT);
+
 	//set sprite shader and vertex array objects active
 	m_SpriteShader->SetActive();
 	m_SpriteVerts->SetActive();
 
 	//draw all sprites
-	//for (auto sprite : m_Sprites)
-	//{
-	//	sprite->Draw(m_SpriteShader);
-	//}
+	for (auto sprite : m_Sprites)
+	{
+		sprite->Draw(m_SpriteShader);
+	}
 
 
 	//swap buffers, which also displays the scene

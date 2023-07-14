@@ -35,12 +35,14 @@ public:
 	Game();
 	~Game();
 	bool Initialize();
-	bool LoadShaders();
 	void RunLoop();
 	void Shutdown();
-	void InitSpriteVerts();
+	
 	void AddActor(Actor* _actor);
 	void RemoveActor(Actor* _actor);
+	
+	void AddSprite(class SpriteComponent* sprite);
+	void RemoveSprite(class SpriteComponent* sprite);
 
 private:
 
@@ -48,15 +50,22 @@ private:
 	vector<Actor*> m_PendingActors;
 	bool m_UpdatingActor;
 
+	vector<class SpriteComponent*> m_Sprites;
+
 	void ProcessInput();
 	void UpdateGame();
 	void GenerateOutput();
+	void InitSpriteVerts();
+	bool LoadShaders();
+
+
 	SDL_Window* m_Window;
 	bool m_IsRunning;
 	Uint32 m_TicksCount;
 	SDL_GLContext m_Context;
 
 	class VertexArray* m_SpriteVerts;
+	class Ship* m_Ship;
 
 	class Shader* m_SpriteShader;
 	//vector <class Sp

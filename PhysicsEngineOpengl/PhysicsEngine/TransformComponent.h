@@ -18,6 +18,10 @@ public:
 	}
 	
 
+	//inline void SetPosition(Vector2 _pos) const {
+	//	m_Position = _pos;
+	//}	
+
 	inline Vector2 GetPosition() const {
 		return m_Position;
 	}

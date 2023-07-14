@@ -30,7 +30,6 @@ private:
 	bool IsValidProgram();
 
 	//store the shader object IDs
-
 	GLuint m_VertexShader;
 	GLuint m_FragShader;
 	GLuint m_ShaderProgram;

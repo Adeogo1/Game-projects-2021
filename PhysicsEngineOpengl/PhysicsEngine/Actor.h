@@ -3,6 +3,8 @@
 #include "RepeatedIncludes.h"
 
 
+const short COMPONENTS = 0;
+
 class Actor
 {
 public:
@@ -19,10 +21,14 @@ public:
 	void UpdateComponent(float _deltaTime);
 	virtual void UpdateActor(float _deltaTime);
 
+	void ProcessInput(const uint8_t* _keyState);
+	virtual void ActorInput(const uint8_t* _keyState);
+
 	virtual void Draw();
 
 	void AddComponent(Component* comp);
 	void RemoveComponent(Component* comp);
+
 
 	template <typename T>
 	T* GetComponent() {
@@ -53,7 +59,11 @@ public:
 		return m_ActorState;
 	}
 
-	TransformComponent* m_Transform;
+	//TransformComponent* m_Transform;
+
+	Game* GetGame() {
+		return m_Game;
+	}
 
 protected:
 	State m_ActorState;

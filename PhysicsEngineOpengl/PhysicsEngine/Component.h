@@ -10,9 +10,13 @@ public:
 
 	virtual void Update(float _deltaTime);
 
+	virtual void ProcessInput(const uint8_t* _keyState){}
+
 	int GetUpdateOrder() const { return m_UpdateOrder; }
 
-	~Component();
+
+
+	virtual ~Component();
 
 protected:
 	class Actor* m_Owner;
