@@ -6,7 +6,8 @@ Ship::Ship(Game* game, Actor* _parent, string _name, bool _static) :Actor(game, 
 	, mLaserCooldown(0.0f)
 {
 	// Create a sprite component
-	SpriteComponent* sc = new SpriteComponent(this, 150,3);
+	SpriteComponent* sc = new SpriteComponent(this, 150,2);
+	sc->SetTexture(game->GetTexture("Assets/Ship.png"));
 }
 
 void Ship::UpdateActor(float deltaTime)

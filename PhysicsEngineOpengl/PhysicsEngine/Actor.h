@@ -29,7 +29,6 @@ public:
 	void AddComponent(Component* comp);
 	void RemoveComponent(Component* comp);
 
-
 	template <typename T>
 	T* GetComponent() {
 		for (Component* c: m_Components)
@@ -59,7 +58,9 @@ public:
 		return m_ActorState;
 	}
 
-	//TransformComponent* m_Transform;
+	TransformComponent* GetTransform() {
+		return m_Transform;
+	}
 
 	Game* GetGame() {
 		return m_Game;
@@ -68,7 +69,7 @@ public:
 protected:
 	State m_ActorState;
 	string m_Name;
-	
+	TransformComponent* m_Transform;
 private:
 
 	bool m_Static;

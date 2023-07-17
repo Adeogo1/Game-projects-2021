@@ -3,8 +3,7 @@
 
 Actor::Actor(Game* _game, Actor* _parent, string _name, bool _static) :m_ActorState(EActive), m_Game(_game)
 {
-	//m_Transform = new TransformComponent(_parent,1);
-	//m_Components.push_back(m_Transform);
+	m_Transform = new TransformComponent(this);
 	m_Game->AddActor(this);
 }
 

@@ -51,6 +51,12 @@
     <ClCompile Include="Ship.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Maths.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -86,12 +92,24 @@
     <ClInclude Include="Ship.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\Basic.frag">
       <Filter>Header Files\Shaders</Filter>
     </None>
     <None Include="Shaders\Basic.vert">
+      <Filter>Header Files\Shaders</Filter>
+    </None>
+    <None Include="Shaders\Transform.vert">
+      <Filter>Header Files\Shaders</Filter>
+    </None>
+    <None Include="Shaders\Sprite.vert">
+      <Filter>Header Files\Shaders</Filter>
+    </None>
+    <None Include="Shaders\Sprite.frag">
       <Filter>Header Files\Shaders</Filter>
     </None>
   </ItemGroup>

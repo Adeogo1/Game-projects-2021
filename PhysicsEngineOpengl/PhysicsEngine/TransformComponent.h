@@ -5,38 +5,48 @@
  class TransformComponent:public Component
 {
 public:
-	TransformComponent(class Actor* _owner, int updateOrder = 10);
+	TransformComponent(class Actor* _owner);
 
 	void Update(float _deltaTime) override;
 
-	Vector2 GetForward() const {
-		return Vector2(cos(m_Rotation), -sin(m_Rotation));
-	}
+	void ComputeWorldTransform();
+	void OnUpdateWorldTransform() override;
 
-	inline Vector2 GetScale() const {
+	//Vector3 GetForward() const {
+	//	return Vector3(cos(m_Rotation), 0.0f, sin(m_Rotation));
+	//}
+
+	inline Vector3 GetScale() const {
 		return m_Scale;
 	}
 	
 
-	//inline void SetPosition(Vector2 _pos) const {
-	//	m_Position = _pos;
-	//}	
+	inline void SetPosition(Vector3 _pos) {
+		m_Position = _pos;
+	}	
 
-	inline Vector2 GetPosition() const {
+	inline Vector3 GetPosition() const {
 		return m_Position;
 	}
 		
 
-	inline float GetRotation() const {
+	inline Vector3 GetRotation() const {
 		return m_Rotation;
 	}
 
-	~TransformComponent();
+	inline Matrix4 GetWorldTransform() {
+		return m_WorldTransform;
+	}
 
+	//inline void SetRotation(float _rotation) {
+	//	m_Rotation = _rotation;
+	//}
 
 private:
-	Vector2 m_Scale;
-	Vector2 m_Position;
-	float m_Rotation;
+	Matrix4 m_WorldTransform;
+	Vector3 m_Scale;
+	Vector3 m_Position;
+	Vector3 m_Rotation;
+	bool m_RecomputeWorldTransform;
 };
 

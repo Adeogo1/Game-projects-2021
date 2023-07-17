@@ -41,6 +41,15 @@ bool Shader::Load(const string& _vertName, const string& _fragName)
 	return true;
 }
 
+void Shader::SetMatrixUniform(const char* _name, const Matrix4& matrix)
+{
+	//find the uniform by this name
+	GLuint loc = glGetUniformLocation(m_ShaderProgram, _name);
+
+	//send the matrix dat to the uniform
+	glUniformMatrix4fv(loc, 1, GL_TRUE, matrix.GetAsFloatPtr());
+}
+
 void Shader::SetActive()
 {
 	glUseProgram(m_ShaderProgram);

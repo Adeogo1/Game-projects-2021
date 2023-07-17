@@ -1,5 +1,7 @@
 #pragma once
 #include "RepeatedIncludes.h"
+#include "Maths.h"
+using namespace Maths;
 
 
 
@@ -11,6 +13,8 @@ public:
 
 	/// Load the vertex/fragment shaders with the given names
 	bool Load(const string& _vertName, const string& _fragName);
+
+	void SetMatrixUniform(const char* _name, const Matrix4& matrix);
 
 	//Set this as the active shader program
 	void SetActive();

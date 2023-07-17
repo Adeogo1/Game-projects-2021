@@ -24,10 +24,6 @@ using namespace Maths;
  };
 
 
- static int CreateShader(const string& _vertexShader, const string& _fragmentShader) {
-
- }
-
 class Game
 {
 public:
@@ -41,6 +37,8 @@ public:
 	void AddActor(Actor* _actor);
 	void RemoveActor(Actor* _actor);
 	
+	class Texture* GetTexture(const string& _fileName);
+
 	void AddSprite(class SpriteComponent* sprite);
 	void RemoveSprite(class SpriteComponent* sprite);
 
@@ -51,12 +49,14 @@ private:
 	bool m_UpdatingActor;
 
 	vector<class SpriteComponent*> m_Sprites;
+	unordered_map<string, class Texture*> m_Textures;
 
 	void ProcessInput();
 	void UpdateGame();
 	void GenerateOutput();
 	void InitSpriteVerts();
 	bool LoadShaders();
+	void UnloadData();
 
 
 	SDL_Window* m_Window;
@@ -68,9 +68,8 @@ private:
 	class Ship* m_Ship;
 
 	class Shader* m_SpriteShader;
-	//vector <class Sp
+	//vector <class SpriteC
 	
-
 };
 
 

@@ -12,9 +12,9 @@ public:
 
 	virtual void ProcessInput(const uint8_t* _keyState){}
 
+	virtual void OnUpdateWorldTransform(){}
+
 	int GetUpdateOrder() const { return m_UpdateOrder; }
-
-
 
 	virtual ~Component();
 

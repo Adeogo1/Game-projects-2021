@@ -3,7 +3,7 @@
 #include "Shader.h"
 #include "SpriteComponent.h"
 #include "Ship.h"
-
+#include "Texture.h"
 
 
 
@@ -89,17 +89,6 @@ bool Game::Initialize()
 
 	m_Ship = new Ship(this,nullptr, "ship");
 
-	Vector2 test(5, 5);
-	test = test * 5.0f;
-	test.Print();
-	//test *= 2.5f;
-	//test.Print();
-	//test *= Vector2(3.25f, 8.0f);
-	//test.Print();
-	test = Vector2(1, 5) * test;
-	test.Print();
-
-
 	m_TicksCount = SDL_GetTicks();
 	
 	return true;
@@ -108,13 +97,34 @@ bool Game::Initialize()
 bool Game::LoadShaders()
 {
 	m_SpriteShader = new Shader();
-	if (!m_SpriteShader->Load("Shaders/Basic.vert", "Shaders/Basic.frag"))
+	if (!m_SpriteShader->Load("Shaders/Sprite.vert", "Shaders/Sprite.frag"))
 	{
 		return false;
 	}
-
-	m_SpriteShader->SetActive();
+m_SpriteShader->SetActive();
+	Matrix4 viewProj = Matrix4::CreateSimpleViewProj(1024.f, 768.f);
+	m_SpriteShader->SetMatrixUniform("u_ViewProj", viewProj);
+	
 	return true;
+}
+
+void Game::UnloadData()
+{
+	//delete actor
+	// because ~actor calls RemoveActor
+	while (!m_Actors.empty())
+	{
+		delete m_Actors.back();
+	}
+
+	//Destroy Texture
+	for (auto i : m_Textures)
+	{
+		i.second->Unload();
+		delete i.second;
+	}
+	m_Textures.clear();
+
 }
 
 void Game::RunLoop()
@@ -130,11 +140,7 @@ void Game::RunLoop()
 void Game::Shutdown()
 {
 
-	while (!m_Actors.empty())
-	{
-		delete m_Actors.back();
-	}
-
+	UnloadData();
 	delete m_SpriteVerts;
 	m_SpriteShader->Unload();
 	delete m_SpriteShader;
@@ -148,7 +154,6 @@ void Game::Shutdown()
 
 void Game::InitSpriteVerts()
 {
-
 	float vertices[] = {
 		-0.5f,  0.5f, 0.f, 0.f, 0.f, // top left
 		 0.5f,  0.5f, 0.f, 1.f, 0.f, // top right
@@ -174,7 +179,6 @@ void Game::AddActor(Actor* _actor)
 	{
 		m_Actors.emplace_back(_actor);
 	}
-
 }
 
 void Game::RemoveActor(Actor* _actor)
@@ -192,9 +196,31 @@ void Game::RemoveActor(Actor* _actor)
 		iter_swap(iter, m_Actors.end() - 1);
 		m_Actors.pop_back();
 	}
-
 }
 
+Texture* Game::GetTexture(const string& _fileName)
+{
+	Texture* tex = nullptr;
+	auto iter = m_Textures.find(_fileName);
+	if (iter != m_Textures.end())
+	{
+		tex = iter->second;
+	}
+	else
+	{
+		tex = new Texture();
+		if (tex->Load(_fileName))
+		{
+			m_Textures.emplace(_fileName, tex);
+		}
+		else
+		{
+			delete tex;
+			tex = nullptr;
+		}
+	}
+	return tex;
+}
 
 void Game::AddSprite(SpriteComponent* sprite)
 {
@@ -211,7 +237,6 @@ void Game::AddSprite(SpriteComponent* sprite)
 			break;
 		}
 	}
-
 	// Inserts element before position of iterator
 	m_Sprites.insert(iter, sprite);
 }
@@ -243,8 +268,6 @@ void Game::ProcessInput()
 	{
 		m_IsRunning = false;
 	}
-
-
 
 	m_UpdatingActor = true;
 	for (auto actors: m_Actors)
@@ -288,6 +311,7 @@ void Game::UpdateGame()
 
 	for (auto pending : m_PendingActors)
 	{
+		pending->UpdateComponent(deltaTime);
 		m_Actors.emplace_back(pending);
 	}
 	m_PendingActors.clear();
@@ -314,6 +338,11 @@ void Game::GenerateOutput()
 	glClearColor(0.86f, 0.86f, 0.86f, 1.0f);
 
 	glClear(GL_COLOR_BUFFER_BIT);
+	glEnable(GL_BLEND);
+	glBlendFunc(
+		GL_SRC_ALPHA, // srcFactor is srcAlpha
+		GL_ONE_MINUS_SRC_ALPHA // dstFactor is 1 - srcAlpha
+	);
 
 	//set sprite shader and vertex array objects active
 	m_SpriteShader->SetActive();
