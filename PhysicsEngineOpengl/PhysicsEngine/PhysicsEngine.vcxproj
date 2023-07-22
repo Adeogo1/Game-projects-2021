@@ -153,6 +153,7 @@
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Maths.cpp" />
+    <ClCompile Include="Physics.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="Ship.cpp" />
     <ClCompile Include="SpriteComponent.cpp" />
@@ -166,6 +167,7 @@
     <ClInclude Include="Component.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Maths.h" />
+    <ClInclude Include="Physics.h" />
     <ClInclude Include="RepeatedIncludes.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="Ship.h" />
