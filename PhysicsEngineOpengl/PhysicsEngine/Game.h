@@ -23,7 +23,7 @@ using namespace Maths;
 	 { -0.5f, 0.5f, 0.0f}
  };
 
-
+ const float fixedDeltaTime = 0.02f;
 class Game
 {
 public:
@@ -53,6 +53,7 @@ private:
 
 	void ProcessInput();
 	void UpdateGame();
+	void FixedUpdateGame();
 	void GenerateOutput();
 	void InitSpriteVerts();
 	bool LoadShaders();

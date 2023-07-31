@@ -1,5 +1,96 @@
-﻿Texture.obj : error LNK2019: unresolved external symbol _SOIL_load_image referenced in function "public: bool __thiscall Texture::Load(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?Load@Texture@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+﻿  Actor.cpp
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(155,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(159,28): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(164,22): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(169,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(342,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(346,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(350,46): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Application.cpp
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(155,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(159,28): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(164,22): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(169,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(342,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(346,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(350,46): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  CircleColliderComponent.cpp
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(155,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(159,28): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(164,22): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(169,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(342,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(346,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(350,46): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Component.cpp
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(155,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(159,28): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(164,22): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(169,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(342,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(346,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(350,46): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Game.cpp
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(155,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(159,28): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(164,22): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(169,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(342,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(346,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(350,46): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Maths.cpp
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(155,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(159,28): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(164,22): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(169,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(342,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(346,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(350,46): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Physics.cpp
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(155,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(159,28): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(164,22): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(169,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(342,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(346,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(350,46): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Shader.cpp
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(155,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(159,28): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(164,22): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(169,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(342,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(346,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(350,46): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Ship.cpp
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(155,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(159,28): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(164,22): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(169,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(342,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(346,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(350,46): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  SpriteComponent.cpp
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(155,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(159,28): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(164,22): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(169,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(342,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(346,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(350,46): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Texture.cpp
+  TransformComponent.cpp
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(155,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(159,28): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(164,22): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(169,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(342,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(346,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\PhysicsEngine\Maths.h(350,46): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  VertexArray.cpp
+  Generating Code...
+Texture.obj : error LNK2019: unresolved external symbol _SOIL_load_image referenced in function "public: bool __thiscall Texture::Load(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?Load@Texture@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
 Texture.obj : error LNK2019: unresolved external symbol _SOIL_free_image_data referenced in function "public: bool __thiscall Texture::Load(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?Load@Texture@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
 Texture.obj : error LNK2019: unresolved external symbol _SOIL_last_result referenced in function "public: bool __thiscall Texture::Load(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?Load@Texture@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
-C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\Dependencies\SOIL2\lib\soil2-debug.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
-C:\Users\a016817k\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\Debug\PhysicsEngine.exe : fatal error LNK1120: 3 unresolved externals
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\Dependencies\SOIL2\lib\soil2-debug.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\adeog\Documents\GitHub\Game-projects-2021\PhysicsEngineOpengl\Debug\PhysicsEngine.exe : fatal error LNK1120: 3 unresolved externals

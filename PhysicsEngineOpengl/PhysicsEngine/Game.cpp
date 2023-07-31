@@ -333,6 +333,10 @@ void Game::UpdateGame()
 	//SDL_Log("deltaTime %f", deltaTime);
 }
 
+void Game::FixedUpdateGame()
+{
+}
+
 void Game::GenerateOutput()
 {
 	glClearColor(0.86f, 0.86f, 0.86f, 1.0f);
