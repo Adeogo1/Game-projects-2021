@@ -324,6 +324,12 @@ namespace Maths {
 			return *this;
 		}
 
+		inline void Clear() {
+			x -= 0;
+			y -= 0;
+			z -= 0;
+		}
+
 
 		Vector3 Normalize() {
 			Vector3 temp = Vector3(x, y,z);

@@ -91,6 +91,20 @@ bool Game::Initialize()
 
 	m_TicksCount = SDL_GetTicks();
 	
+	m_Shot = new Particle();
+
+	switch (m_CurrentShotType)
+	{
+	case PISTOL:
+		m_Shot->SetMass(2.0f);
+		m_Shot->SetVelocity(Vector3(0.0f, 0.0f, 35.0f));
+		m_Shot->SetAcceleration(Vector3(0.0f, -1.0f, 0.0f));
+		m_Shot->SetDamping(0.99f);
+		break;
+	default:
+		break;
+	}
+
 	return true;
 }
 

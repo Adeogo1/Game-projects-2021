@@ -2,16 +2,23 @@
 
 #include "RepeatedIncludes.h"
 #include <SDL_image.h>
-#include "Maths.h"
+#include "Physics.h"
 #include "Actor.h"
 using namespace Maths;
+using namespace Physics;
 
 
 
 
  const int THICKNESS = 15;
  const float paddleH = 100.0f;
-
+ enum ShotType
+ {
+	 PISTOL,
+	 ARTILLERY,
+	 FIREBALL,
+	 LASER
+ };
 
 
  const float Vertices2D[][6] = {
@@ -70,7 +77,8 @@ private:
 
 	class Shader* m_SpriteShader;
 	//vector <class SpriteC
-	
+	Particle* m_Shot;
+	ShotType m_CurrentShotType;
 };
 
 
