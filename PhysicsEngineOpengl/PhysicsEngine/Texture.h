@@ -1,5 +1,5 @@
 #pragma once
-#include "SOIL2/SOIL2.h"
+#include <SOIL2.h>
 #include "RepeatedIncludes.h"
 
 
